@@ -1,0 +1,59 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 2000h
+\par MOV B M
+\par MVI D 01h
+\par FACTORIAL: CALL MULTIPLY
+\par DCR B
+\par MULTIPY: JNZ FACTORIAL
+\par INX H
+\par MOV M D
+\par HLT
+\par MULTIPLY: MOV E B
+\par MVI A 00h
+\par MULTIPLYLOOP: ADD D
+\par DCR E
+\par JNZ MULTIPLYLOOP
+\par MOV D A
+\par STA 2002h
+\par RET\cf0 
+\par }
+<End Codes>
+20
+3| 2000| 05
+4| 2002| 78
+<End UserData>
+44
+1| 8000| 21
+2| 8001| 00
+3| 8002| 20
+4| 8003| 46
+5| 8004| 16
+6| 8005| 01
+7| 8006| CD
+8| 8007| 10
+9| 8008| 80
+10| 8009| 05
+11| 800A| C2
+12| 800B| 06
+13| 800C| 80
+14| 800D| 23
+15| 800E| 72
+16| 800F| 76
+17| 8010| 58
+18| 8011| 3E
+19| 8012| 00
+20| 8013| 82
+21| 8014| 1D
+22| 8015| C2
+23| 8016| 13
+24| 8017| 80
+25| 8018| 57
+26| 8019| 32
+27| 801A| 02
+28| 801B| 20
+29| 801C| C9
+<End HexData>
+
+<End Comment>

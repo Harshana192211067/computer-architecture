@@ -1,0 +1,48 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI B 00h
+\par LHLD 4200h
+\par XCHG
+\par LHLD 4202h
+\par DAD D
+\par JNC SKIP
+\par INR B
+\par SKIP: SHLD 4203h
+\par MOV A B
+\par STA 4204h
+\par HLT\cf0 
+\par }
+<End Codes>
+20
+2| 4200| 04
+3| 4202| 02
+4| 4203| 06
+5| 4204| 00
+<End UserData>
+35
+1| 8000| 06
+2| 8001| 00
+3| 8002| 2A
+4| 8003| 00
+5| 8004| 42
+6| 8005| EB
+7| 8006| 2A
+8| 8007| 02
+9| 8008| 42
+10| 8009| 19
+11| 800A| D2
+12| 800B| 0E
+13| 800C| 80
+14| 800D| 04
+15| 800E| 22
+16| 800F| 03
+17| 8010| 42
+18| 8011| 78
+19| 8012| 32
+20| 8013| 04
+21| 8014| 42
+22| 8015| 76
+<End HexData>
+
+<End Comment>
